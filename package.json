@@ -170,5 +170,8 @@
       "node": "./dist/index.offscreen.cjs",
       "types": "./dist/index.offscreen.d.ts"
     }
+  },
+  "dependencies": {
+    "galiops": "^6.0.0-beta17-ww"
   }
 }
