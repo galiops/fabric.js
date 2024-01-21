@@ -1,8 +1,8 @@
 {
-  "name": "fabric",
+  "name": "galiops",
   "description": "Object model for HTML5 canvas, and SVG-to-canvas parser. Backed by jsdom and node-canvas.",
   "homepage": "http://fabricjs.com/",
-  "version": "6.0.0-beta17",
+  "version": "6.0.0-beta17-ww",
   "author": "Juriy Zaytsev <kangax@gmail.com>",
   "contributors": [
     {
@@ -132,6 +132,9 @@
   },
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "offscreen": [
+    "dist/index.offscreen.d.ts"
+  ],
   "typesVersions": {
     ">=4.2": {
       "*": [
@@ -159,6 +162,16 @@
       "default": "./dist/index.node.cjs",
       "node": "./dist/index.node.cjs",
       "types": "./dist/index.node.d.ts"
+    },
+    "./offscreen": {
+      "import": "./dist/index.offscreen.mjs",
+      "require": "./dist/index.offscreen.cjs",
+      "default": "./dist/index.offscreen.cjs",
+      "node": "./dist/index.offscreen.cjs",
+      "types": "./dist/index.offscreen.d.ts"
     }
+  },
+  "dependencies": {
+    "galiops": "^6.0.0-beta17-ww"
   }
 }
